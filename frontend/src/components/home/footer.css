@@ -1,0 +1,169 @@
+.footer {
+    background-color: #0A2853;
+    color: white;
+    padding: 40px;
+    position: relative;
+    margin-top: 70px;
+}
+
+/* General footer content layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Left section with logo and navigation */
+.footer-left {
+    flex-basis: 45%;
+    position: relative;
+}
+
+/* Logo styling */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Navigation links below the logo */
+.footer-nav {
+    margin-top: 65px;
+    margin-left: 0; /* Removed the large negative margin for better alignment */
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Flexbox to align horizontally */
+}
+
+.footer-nav ul li {
+    margin-right: 30px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social media icons */
+.social-icons {
+    margin-top: 40px;
+    display: flex; /* Flexbox to align icons horizontally */
+}
+
+.social-icons a {
+    margin-right: 20px; /* Reduced spacing for consistency */
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Optional hover effect */
+}
+
+/* Right section with description */
+.footer-right {
+    flex-basis: 45%;
+    text-align: right;
+}
+
+.footer-right h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.footer-right p {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: left;
+    width: 80%;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    padding-top: 10px;
+    border-top: 1px solid white;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-left, .footer-right {
+        flex-basis: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .logo h2 {
+        font-size: 23px;
+        margin-left: 0;
+        margin-top: -10px;
+    }
+
+    .footer-nav {
+        margin-top: 45px;
+        margin-left: 0;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav ul li {
+        margin-right: 0;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .footer-right {
+        margin-top: 50px;
+    }
+
+    .footer-right h3 {
+        font-size: 18px;
+    }
+
+    .footer-right p {
+        font-size: 14px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,120 @@
+/* Base Header Styles */
+.login_header {
+    width: 100%; /* Full width */
+    height: 80px;
+    display: flex;
+    justify-content: space-between; /* Keep logo on the left and nav on the right */
+    align-items: center;
+    background-color: #2D3E7F; /* Background color */
+    color: white; /* General text color */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Logo Styling */
+.login_logo {
+    display: flex;
+    padding-left: 30px; /* Space on the left for the logo */
+    align-items: center;
+    flex-grow: 1; /* Ensures the logo stays on the left and uses available space */
+}
+
+.login_logo span {
+    font-weight: 600; /* Make the logo text semi-bold */
+    color: white; /* Ensure logo text color is white */
+}
+
+.mobile-icon {
+    font-size: 2rem; /* Size of the mobile menu icon */
+    margin-right: 10px; /* Space between mobile icon and school icon */
+}
+
+.login_school-logo {
+    font-size: 2rem; /* School logo size */
+    margin-right: 10px; /* Space between the school logo and text */
+}
+
+/* Navbar Styling */
+.login_navbar {
+    display: flex;
+    gap: 30px; /* Space between each navigation link */
+    margin-right: 30px; /* Right margin for navbar */
+}
+
+.nav-link {
+    color: white; /* Navigation link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Optional: Set font size */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+/* Profile Icon */
+.login_profile-icon {
+    font-size: 2rem; /* Size of the profile icon */
+    margin-right: 15px; /* Space on the right for profile icon */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .login_header {
+        justify-content: flex-start; /* Align everything to the start in mobile view */
+    }
+
+    .login_logo {
+        padding-left: 10px; /* Reduce padding for the logo on mobile */
+        flex: 1; /* Let the logo take up available space */
+    }
+
+    .mobile-icon {
+        display: inline-block; /* Show mobile menu icon */
+        margin-left: 5px; /* Small space for mobile icon */
+    }
+
+    .login_navbar {
+        display: none; /* Hide the navbar on mobile */
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #2D3E7F; /* Match header background */
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .dropdown-menu .nav-link {
+        padding: 10px 20px; /* Add padding around the dropdown links */
+        color: white; /* Link color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .dropdown-menu .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
+    }
+
+    .login_profile-icon {
+        order: 1; /* Move profile icon to the right */
+        margin-right: 15px;
+    }
+
+    .login_user-profile-icon {
+        font-size: 1.5rem; /* Adjust the size of the user profile icon */
+    }
+}
+
+/* Styles for larger screens (Desktop) */
+@media (min-width: 769px) {
+    .login_navbar {
+        display: flex; /* Show the navbar on desktop */
+    }
+
+    .dropdown-menu {
+        display: none; /* Hide dropdown on larger screens */
+    }
+}

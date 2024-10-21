@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Default for all devices */
+}
+
+.new-login-page {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.new-login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 3rem;
+    gap: 2rem; /* Adjusted gap */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+/* Desktop Styles */
+.new-login-form-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Adjust width for desktop */
+    max-width: 400px; /* Limit maximum width */
+    flex: 1; /* Ensure equal size */
+    margin-left: 1rem;
+}
+
+.new-login-title {
+    text-align: center;
+    color: #2D3E7F;
+    margin-bottom: 1.5rem;
+}
+
+.new-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.new-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-form-input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Fixed font size */
+}
+
+.new-login-button {
+    background-color: #FFA500;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-login-button:hover {
+    background-color: #ff8700;
+}
+
+.new-login-options {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.new-login-link {
+    color: #2D3E7F;
+    text-decoration: none;
+}
+
+.new-login-link:hover {
+    text-decoration: underline;
+}
+
+.new-login-image-section {
+    display: flex;
+    width: 45%; /* Adjust width for desktop */
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Ensure equal size */
+}
+
+.new-login-image {
+    max-width: 100%; /* Ensure image fits within the section */
+    height: auto;
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit maximum width */
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .new-login-main {
+        flex-direction: column; /* Stack elements on mobile */
+        padding: 2rem; /* Reduced padding for mobile view */
+        gap: 1rem; /* Adjust gap */
+    }
+
+    .new-login-image-section {
+        order: 1; /* Set image to appear first */
+        width: 100%; /* Full width for mobile */
+        justify-content: center;
+    }
+
+    .new-login-form-section {
+        order: 2; /* Set form to appear after the image */
+        width: 100%; /* Full width for mobile */
+        margin-top: 1rem; /* Add top margin on mobile */
+    }
+
+    .new-login-title {
+        font-size: 1.5rem; /* Adjust title font size for mobile */
+    }
+
+    .new-form-input {
+        font-size: 1rem; /* Consistent input font size */
+    }
+
+    .new-login-button {
+        font-size: 1rem; /* Consistent button font size */
+    }
+}

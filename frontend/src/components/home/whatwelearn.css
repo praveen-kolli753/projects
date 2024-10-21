@@ -1,0 +1,74 @@
+.what-we-learn {
+  text-align: center;
+  padding: 50px;
+  background-color: #f5f7fa; /* Same background color */
+}
+
+/* Main heading styles */
+.what-we-learn h1 {
+  font-size: 36px; /* Same font size */
+  color: #003366; /* Same heading color */
+  margin-bottom: 20px;
+}
+
+.what-we-learn h1 span {
+  color: #ff9933; /* Same highlight color */
+}
+
+/* Description text */
+.what-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #333; /* Same text color */
+}
+
+/* Learning benefits section */
+.learning-benefits {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Added flex-wrap to make it responsive */
+  margin-top: 40px;
+}
+
+/* Benefit boxes */
+.benefit {
+  width: 20%;
+  text-align: center;
+  margin: 10px; /* Added margin for better spacing on smaller screens */
+}
+
+.benefit h3 {
+  margin-top: 10px;
+  color: #003366; /* Same benefit heading color */
+}
+
+.benefit p {
+  font-size: 14px;
+  color: #666; /* Same description color */
+}
+
+/* Icon styling */
+.icon {
+  font-size: 50px;
+  color: #ff9933; /* Same icon color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .learning-benefits {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .benefit {
+      width: 80%; /* Full width on smaller screens */
+      margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .benefit {
+      width: 45%; /* Adjust width for tablet-sized screens */
+  }
+}
